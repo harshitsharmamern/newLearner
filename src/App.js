@@ -1,8 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import A from './component/A';
-import B from './component/B';
-import C from './component/C';
+
 import Contextstate from './component/context/Contextstate';
 import {
   BrowserRouter,
@@ -10,15 +7,10 @@ import {
   Route,
 } from "react-router-dom";
 import Navbar from './component/Nav/Navbar';
-import Home from './component/Nav/Home';
+// import Home from './component/Nav/Home';
+import Home from './component/context/Home';
 import About from './component/Nav/About';
 function App() {
-
-  const b1={
-       
-  }
-  // const [on, off] = useState()
-
 
   return (
    <>
