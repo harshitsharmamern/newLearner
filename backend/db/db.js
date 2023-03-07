@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-
+const link = "mongodb://localhost:27017/data_base"
+//const li = process.env.DATABASE
 const connectToMongo = () => {
   mongoose
-    .connect(process.env.DATABASE)
+    .connect(link)
     .then(() => {
       console.log("Connected to Database");
     })

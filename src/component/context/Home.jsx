@@ -1,6 +1,9 @@
 // import React from 'react'
 import React, { useEffect, useState, useRef } from "react";
-
+import Navbar from "../Nav/Navbar";
+import Card from "./Card";
+import Carousal from "./Screen/Carousal";
+import Footer from "./Screen/Footer";
 const Home = () => {
     const [data_val, set_data_val] = useState({});
 
@@ -33,29 +36,16 @@ const Home = () => {
     }, [])
     
   return (<>
-  <div>Home</div>
-  <p>
-  {/* {data_val[0].fName} <br />
-  {data_val[0].hobbie[0].game}
-  {data_val[0].hobbie.game}  */}
-
-  {data_val.map((d)=>{
-    return(<>
-    {d.fName} <br />
-    {d.hobbie.map((da)=>{
-      return(<>
-      {da.game} <br />
-      {da.books}
-      {da.education}
-      </>)
-    })}
-    
-    </>)
-  })}
-
-    </p>
-  </>
-    )
+  
+<Navbar/> 
+hello this is  my website
+<div>
+{/* <Carousal/> */}
+{/* <Card/>
+<Card/>
+<Card/> */}
+ </div>
+   </>)
 }
 
 export default Home
